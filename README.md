@@ -35,50 +35,47 @@
  • Teste de Modularidade: Garante que alterações em uma parte não afetem o resto do sistema.
 
 
-===========================================================================
+
   🔍 ABORDAGENS DE TESTE
-===========================================================================
+
 
   [⬛ CAIXA PRETA] -> Focado nos dados de entrada e saída, sem olhar o código.
   [⬜ CAIXA BRANCA] -> Focado na estrutura interna, lógica e linhas do código.
 
-===========================================================================
+
   🏗️ ANALOGIA DA CONSTRUÇÃO DE UMA CASA
-===========================================================================
+
 
   🧱 Verificar cada tijolo      ════>  [Teste Unitário]
   🚪 Avaliar o cômodo           ════>  [Teste de Integração]
   🏠 Inspecionar a casa inteira  ════>  [Teste de Sistema]
   🔑 Proprietário aprova a casa  ════>  [Teste de Aceitação]
 
-===========================================================================
   🛠️ DETALHAMENTO DAS FASES DE VALIDAÇÃO
-===========================================================================
+
 
  🔹 [TESTE UNITÁRIO]
- ─────────────────────────────────────────────────────────────────────────
+
    • O que é: Teste da menor parte isolada do código.
    • Quem realiza: O próprio desenvolvedor.
    • Quando: Durante a criação do código.
    • Objetivo: Encontrar erros pequenos e falhas de lógica interna.
 
  🔹 [TESTE DE INTEGRAÇÃO]
- ─────────────────────────────────────────────────────────────────────────
+
    • O que é: Teste de comunicação entre duas ou mais partes.
    • Quem realiza: O desenvolvedor ou a equipe de QA (Testador).
    • Objetivo: Garantir que os módulos conversem perfeitamente entre si.
 
  🔹 [TESTE DE SISTEMA]
- ─────────────────────────────────────────────────────────────────────────
+
    • O que é: O sistema completo testado de ponta a ponta.
    • Quem realiza: Equipe focada em testes (QA / Testador).
    • Objetivo: Validar a jornada completa e real do usuário.
 
  🔹 [TESTE DE ACEITAÇÃO (UAT)]
- ─────────────────────────────────────────────────────────────────────────
+
    • O que é: A validação final focada nas regras de negócio.
    • Quem realiza: Cliente final ou usuário-chave (Key User).
    • Objetivo: Verificar se o sistema atende às reais necessidades antes do lançamento.
-
-===========================================================================
 
