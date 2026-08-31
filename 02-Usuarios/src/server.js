@@ -7,6 +7,7 @@ const PORT = 3333;
 const iniciarServidor = async () => {
   try {
     await conn.sync();
+    // await conn.sync({force: true}); 
     app.listen(PORT, () => {
       console.log(`Servidor iniciado em http://localhost:${PORT}`);
     });

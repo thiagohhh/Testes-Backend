@@ -33,6 +33,16 @@ export const usuarioModel = conn.define(
         },
       },
     },
+
+    senha: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      notEmpty: { msg: "A senha é obrigatório" },
+      len: {
+        msg: "O senha deve possuir entre 3 e 100 carcteres",
+        args: [8, 100],
+      },
+    },
     idade: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -54,5 +64,16 @@ export const usuarioModel = conn.define(
   },
   {
     timestamps: false,
+    defaultScope: {
+      attributes: {
+        exclude: ["senha"], // não vai mostrar a senha
+      },
+    },
+
+    scopes: {
+      comSenha: {
+        attributes: {}, // todos os atributos
+      },
+    },
   },
 );

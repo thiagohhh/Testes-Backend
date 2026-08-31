@@ -1,4 +1,3 @@
-import { response } from "express";
 import { ValidationError, UniqueConstraintError } from "sequelize";
 
 export const tratarErro = (error, response) => {
@@ -10,6 +9,6 @@ export const tratarErro = (error, response) => {
   if (error instanceof ValidationError) {
     return response.status(400).json({ message: error.errors[0].message });
   }
-
+  console.log(error);
   return response.status(500).json({ message: "Erro interno do servidor" });
 };
